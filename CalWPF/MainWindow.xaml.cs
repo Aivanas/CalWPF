@@ -27,6 +27,8 @@ namespace CalWPF
                 Button button = new Button();
                 button.Content = (i+1).ToString();
                 button.Margin = new Thickness(1);
+                button.Name = "Button" + i;
+                
                 DatesGrid.Children.Add(button);
                 if (column <= 7)
                 {
